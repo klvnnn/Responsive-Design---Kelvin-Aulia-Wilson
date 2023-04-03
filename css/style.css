@@ -62,12 +62,10 @@ header{
 .article-layout .container{
     display: flex;
     flex-direction: row;
-    /* background-color: red; */
     width: 100%;
 }
 .article-left{
     width: 75%;
-    /* background-color:blueviolet; */
 }
 .article-right{
     width: 25%;

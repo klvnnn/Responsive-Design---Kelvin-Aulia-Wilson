@@ -1,0 +1,117 @@
+:root{
+    --primary:#20c0d8;
+    --secondary:#e2e2e2;
+    --txt:#010101;
+}
+
+*{
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+body{
+    margin: 0;
+    padding: 0;
+    background-color: var(--secondary);
+}
+.heading{
+    height: 4rem;
+    background-color: white;
+}
+
+.navbar a{
+    color: var(--txt);
+    padding: 0 2.5rem;
+}
+
+.navbar a:hover{
+    color:var(--primary);
+}
+.navbar a::after{
+    content: '';
+    display: block;
+    padding-bottom: 0.2rem;
+    border-bottom: 0.1rem solid var(--primary);
+    transform: scaleX(0);
+    transition: 0.2s linear;
+}
+
+.navbar a:hover::after{
+    transform: scaleX(0.5);
+}
+
+.hero-blog{
+    height: 10rem;
+    background-color: var(--primary);
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+/* .content-article{
+    background-color: var(--secondary);
+    height: 33rem;
+} */
+
+.cards{
+    margin-top: 3rem;
+}
+.lessons{
+    margin-left: 0.5rem;
+}
+.card{
+    border-radius: 5px;
+    box-shadow: 0 2px 5px #ccc;
+    padding: 0.5em;
+    display: block;
+    /* width: 100%; */
+}
+.card .card-img{
+    position: relative;
+}
+.card .card-img img{
+    width: 100%;
+    border-radius: 5px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.card-img h5{
+    position: absolute;
+    width: 100%;
+    top: 70%;
+    left: 5%;
+}
+.card-text{
+    padding: 0.1em;
+}
+.card-text .card-next{
+    background-color: var(--primary);
+    height: 20px;
+    width: 100%;
+}
+.card-text .card-next h5{
+    font-size: 13px;
+    line-height: 20px;
+    color: #107282;
+    padding-left: 1em;
+}
+.lesson-article a{
+    color: var(--txt);
+    display: block;
+    padding-left: 2em;
+}
+.lesson-article a:hover{
+    color: var(--primary);
+
+}
+.lesson-article a::after{
+    content: '';
+    border-bottom: 0.1rem solid var(--primary);
+    display: block;
+    padding-bottom: 0.5rem;
+    transform: scaleX(0);
+    transition: 0.2s linear;
+}
+.lesson-article a:hover::after{
+    transform: scaleX(1);
+}
